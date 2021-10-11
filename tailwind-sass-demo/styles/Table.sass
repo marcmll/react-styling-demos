@@ -1,0 +1,37 @@
+.table-primary
+  @apply w-full max-w-full
+  @apply overflow-x-auto whitespace-nowrap
+
+  thead, tbody
+    @apply w-full
+    @apply table
+
+    tr
+      @apply w-full h-14
+      @apply flex items-center justify-between
+      @apply cursor-pointer
+    
+    th, td
+      @apply px-4 py-0
+      @apply h-full
+      @apply text-sm text-left
+      @apply flex-grow
+      @apply flex items-center
+
+      &:hover
+        @apply bg-[#EDF0FF]
+
+    th
+      @apply text-gray-500
+      @apply font-bold
+
+    td
+      @apply text-gray-800
+      @apply font-medium
+
+  tbody > tr
+    @apply border-t border-gray-100
+
+    &:first-child
+      @apply border-gray-300
+
